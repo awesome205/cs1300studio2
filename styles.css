@@ -1,20 +1,74 @@
-#logoBar{
+#logoBar {
   width: 30vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#siteLogo{
+#siteLogo {
   width: 100%;
 }
 body {
   display: flex;
+  background-color: #f2f2f2;
 }
-#staffGallery{
-  width: 70vw;
+#staffGallery {
   display: inherit;
-
+  margin-top: 5vh;
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.galleryImage{
-  width: 100%;
-  height: auto;
+.galleryImage {
+  width: auto;
   height: 300px;
+  object-fit: contain;
+}
+
+h1,
+h3 {
+  color: #d61a3c;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid #d61a3c;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 360px;
+  filter: drop-shadow(0 0 5px #333);
+  margin:5px;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+@media (width <= 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  #logoBar {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 100%;
+  }
 }
