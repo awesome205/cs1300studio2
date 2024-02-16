@@ -42,7 +42,7 @@ h3 {
   align-items: center;
   height: 360px;
   filter: drop-shadow(0 0 5px #333);
-  margin:5px;
+  margin: 5px;
 }
 .card:hover {
   transform: scale(1.05);
@@ -71,4 +71,6 @@ h3 {
     height: auto;
     width: 100%;
   }
+  #staffGallery {
+  justify-content: center;  }
 }
